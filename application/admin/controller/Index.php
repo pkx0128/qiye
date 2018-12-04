@@ -1,10 +1,13 @@
 <?php
 namespace app\admin\controller;
 
-class Index
+use app\admin\common\Base;
+
+
+class Index extends Base
 {
     public function index()
     {
-        return '我是admin后台入口';
+        return $this -> view->fetch('index');
     }
 }
